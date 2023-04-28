@@ -1,29 +1,18 @@
 /* eslint-disable react/jsx-key */
-import { Suspense, useRef, useState, useEffect, useCallback } from "react";
+import { useRef, useState } from "react";
 import {
   CloudDownloadOutlined,
   FormatPainterOutlined,
-  MenuUnfoldOutlined,
-  StarOutlined,
   SwitcherOutlined,
   UnorderedListOutlined,
 } from "@ant-design/icons";
 import Image from "next/image";
 
-//
-import SaveSolution from "@/components/SaveSolution";
-// import { ParkModel, ParkModel03 } from "@/components/importModels";
+
 import ResidenceCanvas00 from "./canvas/ResidenceCanvas00";
-import ResidenceCanvas01 from "./canvas/ResidenceCanvas01";
-import ParameterInputs from "./components/ParameterInputs";
-import RenderMode from "./components/RenderMode";
-import levaTheme from "@/assets/json/levaTheme.json";
 import ModelInfo from "@/components/modelInfo";
-import NightingaleChart from "./echarts/NightingaleChart";
-import VehicleScene from "@/components/RaycastVehicle";
 import PieChart from "./echarts/PieChart";
 import { Double, Single } from "@/assets";
-import Link from "next/link";
 
 const Residence = () => {
   const [showLeva, setShowLeva] = useState(true);

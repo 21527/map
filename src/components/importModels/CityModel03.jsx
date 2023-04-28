@@ -10,7 +10,7 @@ import { EffectComposer, Outline, Select } from "@react-three/postprocessing";
 import { useFrame } from "@react-three/fiber";
 
 export default function CityModel03(props) {
-  const { nodes, materials, scene } = useGLTF("models/city/citymodel07.glb");
+  const { nodes, materials, scene } = useGLTF("/models/city/citymodel07.glb");
   const meshes = Object.values(nodes).filter((n) => n.type === "Mesh");
   console.log("nodes", nodes);
   const group = useRef();
@@ -60,7 +60,7 @@ export default function CityModel03(props) {
         <Edges scale={1} threshold={15} color='#F00' lineWidth={20} />
       </mesh> */}
       <Select enabled={config.all}>
-        <Select name='center' enabled={config.center}>
+        <Select name="center" enabled={config.center}>
           {/* //skirt */}
           {meshes
             .filter((v) => v.parent.name.includes("skirt"))
@@ -80,7 +80,7 @@ export default function CityModel03(props) {
                     // color="#F0F"
                   />
                   {/* <customOtherShaderMaterial attach="material" /> */}
-                  <Edges scale={1} threshold={15} color='#000' />
+                  <Edges scale={1} threshold={15} color="#000" />
                 </mesh>
               );
             })}
@@ -106,12 +106,12 @@ export default function CityModel03(props) {
                     // opacity={0.95}
                     // color="#FF0"
                   />
-                  <Edges scale={1} threshold={15} color='#999' />
+                  <Edges scale={1} threshold={15} color="#999" />
                 </mesh>
               );
             })}
         </Select>
-        <Select name='green' enabled={config.green}>
+        <Select name="green" enabled={config.green}>
           {/* //building */}
           {meshes
             .filter((v) => v.parent.name.includes("green"))
@@ -131,12 +131,12 @@ export default function CityModel03(props) {
                     // color='#AAA'
                   />
                   {/* <customOtherShaderMaterial attach="material" /> */}
-                  <Edges scale={1} threshold={15} color='#AAA' />
+                  <Edges scale={1} threshold={15} color="#AAA" />
                 </mesh>
               );
             })}
         </Select>
-        <Select name='road'>
+        <Select name="road">
           {/* road */}
           {meshes
             .filter((v) => v.parent.name.includes("road"))
@@ -154,12 +154,12 @@ export default function CityModel03(props) {
                     color={config.roadColor}
                   />
                   {/* <customOtherShaderMaterial attach="material" /> */}
-                  <Edges scale={1} threshold={15} color='#AAA' />
+                  <Edges scale={1} threshold={15} color="#AAA" />
                 </mesh>
               );
             })}
         </Select>
-        <Select name='tree'>
+        <Select name="tree">
           {/* tree */}
           {meshes
             .filter((v) => v.name.includes("tree"))
@@ -177,12 +177,12 @@ export default function CityModel03(props) {
                     color={config.treeColor}
                   />
                   {/* <customOtherShaderMaterial attach="material" /> */}
-                  <Edges scale={1} threshold={15} color='#AAA' />
+                  <Edges scale={1} threshold={15} color="#AAA" />
                 </mesh>
               );
             })}
         </Select>
-        <Select name='car'>
+        <Select name="car">
           {/* car */}
           {meshes
             .filter((v) => v.parent.name.includes("car"))
@@ -200,12 +200,12 @@ export default function CityModel03(props) {
                     color={config.carColor}
                   />
                   {/* <customOtherShaderMaterial attach="material" /> */}
-                  <Edges scale={1} threshold={15} color='#AAA' />
+                  <Edges scale={1} threshold={15} color="#AAA" />
                 </mesh>
               );
             })}
         </Select>
-        <Select name='water'>
+        <Select name="water">
           {/* water */}
           {meshes
             .filter((v) => v.parent.name.includes("water"))
@@ -223,12 +223,12 @@ export default function CityModel03(props) {
                     color={config.waterColor}
                   />
                   {/* <customOtherShaderMaterial attach="material" /> */}
-                  <Edges scale={1} threshold={15} color='#AAA' />
+                  <Edges scale={1} threshold={15} color="#AAA" />
                 </mesh>
               );
             })}
         </Select>
-        <Select name='site'>
+        <Select name="site">
           {/* site */}
           {meshes
             .filter((v) => v.parent.name.includes("site"))
@@ -246,7 +246,7 @@ export default function CityModel03(props) {
                     color={config.siteColor}
                   />
                   {/* <customOtherShaderMaterial attach="material" /> */}
-                  <Edges scale={1} threshold={15} color='#AAA' />
+                  <Edges scale={1} threshold={15} color="#AAA" />
                 </mesh>
               );
             })}

@@ -1,16 +1,18 @@
-import CityModel from "./CityModel";
-import CityModel03 from "./CityModel03";
-import ParkModel from "./ParkModel";
-import ParkModel00 from "./ParkModel00";
-import ParkModel03 from "./ParkModel03";
-import RhinoModel0316 from "./RhinoModel0316";
-import Tree from "./Tree";
-import ResidenceModel from "./ResidenceModel";
-import ResidenceModel00 from "./ResidenceModel00";
-import ResidenceModel01 from "./ResidenceModel01";
-import ResidenceModel02 from "./ResidenceModel02";
-import FacadeModel from "./FacadeModel";
-import GenModel from "./GenModel";
+import dynamic from "next/dynamic";
+
+const CityModel = dynamic(() => import("./CityModel"));
+const CityModel03 = dynamic(() => import("./CityModel03"));
+const ParkModel = dynamic(() => import("./ParkModel"));
+const ParkModel00 = dynamic(() => import("./ParkModel00"));
+const ParkModel03 = dynamic(() => import("./ParkModel03"));
+const RhinoModel0316 = dynamic(() => import("./RhinoModel0316"));
+const Tree = dynamic(() => import("./Tree"));
+const ResidenceModel = dynamic(() => import("./ResidenceModel"));
+const ResidenceModel00 = dynamic(() => import("./ResidenceModel00"));
+const ResidenceModel01 = dynamic(() => import("./ResidenceModel01"));
+const ResidenceModel02 = dynamic(() => import("./ResidenceModel02"));
+const FacadeModel = dynamic(() => import("./FacadeModel"));
+const GenModel = dynamic(() => import("./GenModel"));
 
 export {
   CityModel,

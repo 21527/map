@@ -18,15 +18,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
-    "src/components/importModels/CityModel.jsx",
-    "src/shader/test/Basic.js",
-    "src/pages/test/Cube.jsx",
-    "src/pages/residence/canvas/ResidenceCanvas.tsx",
-    "src/components/importModels/ResidenceModel00.jsx"
-  ],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
   "exclude": ["node_modules"]
 }
